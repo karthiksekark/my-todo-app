@@ -1,0 +1,3 @@
+<h1>{{totalCount}} todos are available</h1>
+<input type="text" (keyup.enter)="addTodo($event, todoName)" #todoName/>
+<app-todos-list (todosCount)="countUpdate($event)" [todos]="todosCollection"></app-todos-list>
